@@ -9,7 +9,7 @@
             margin: 0;
             overflow: hidden;
             background-color: #221450;
-            background-image: radial-gradient(closest-side at var(--x, 50%) var(--y, 50%), #4c2a91, #221450);
+            background-image: radial-gradient(closest-side at var(--x, 50%) var(--y, 50%), white, #221450);
         }
 
         iframe {
@@ -36,6 +36,7 @@
         document.addEventListener("mousemove", function (event) {
             document.body.style.setProperty("--x", event.clientX + "px");
             document.body.style.setProperty("--y", event.clientY + "px");
+            console.log("Mouse position:", event.clientX, event.clientY);
         });
     </script>
 </head>
